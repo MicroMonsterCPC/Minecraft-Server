@@ -1,0 +1,9 @@
+version: '2'
+services:
+  server:
+    build: .
+    command: ls #java -Xms1024M -Xmx1024M -jar spigot-1.11.2.jar
+    volumes:
+      - .:/buildtools
+    ports:
+      - "25565:25565"
