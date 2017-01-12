@@ -10,4 +10,6 @@ RUN java -jar BuildTools.jar
 RUN java -Xms1024M -Xmx1024M -jar spigot-1.11.2.jar &&\
 			sed -i "s/false/true/g" eula.txt
 
+ADD ./plugins/* /buildtools/plugins/
+
 CMD ["java", "-Xms1024M", "-Xmx1024M", "-jar", "spigot-1.11.2.jar"]
