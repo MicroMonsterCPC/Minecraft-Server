@@ -18,10 +18,12 @@ $ docker run jpnlavender/spigot-minecraft-server
 
 #How to Use CraftBukkit Plugin
 
+~~~
 .
 ├── Dockerfile
 ├── README.md
 ├── docker-compose.yml
-└── plugins <----- **Put a jar file here**
+└── plugins <----- Put a jar file here
     ├── hoge.jar
     └── fuga.jar
+~~~
