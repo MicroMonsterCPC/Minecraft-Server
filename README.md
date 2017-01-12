@@ -6,6 +6,10 @@
 $ git clone https://github.com/OppaiParty/Minecraft-Server.git ~/Desktop/Minecraft-Server && cd ~/Desktop/Minecraft-Server
 $ docker build it minecraft && docker run -p 25565:25565 minecraft
 ~~~
+or
+~~~bash
+$ git clone https://github.com/OppaiParty/Minecraft-Server.git ~/Desktop/Minecraft-Server && ~/Desktop/Minecraft-Server/start.sh
+~~~
 **Wait 10minutes**
 
 ##For DockerHub
@@ -13,7 +17,7 @@ $ docker build it minecraft && docker run -p 25565:25565 minecraft
 [DockerHub](https://hub.docker.com/r/jpnlavender/spigot-minecraft-server/)
 
 ~~~bash
-$ docker run jpnlavender/spigot-minecraft-server
+$ docker run -p 25565:25565 --name mine-server jpnlavender/spigot-minecraft-server
 ~~~
 
 #How to Use CraftBukkit Plugin
